@@ -1,14 +1,20 @@
 # make directory to download, build and make cgal and optiperslp. This requires
 # root privileges and a debian/ubuntu machine. 
 
+export HOME=/home
+
+apt update1
+apt install cmake 
+apt install make
+
 mkdir installation
 
 cd installation
 
 # install conda to download bokeh 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash -b -p $HOME/miniconda3 Miniconda3-latest-Linux-x86_64.sh 
-
+mkdir ../miniconda3
+bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 # activate base 
 conda activate base
 
