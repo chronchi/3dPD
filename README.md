@@ -9,6 +9,14 @@ The following packages are needed to use the tool
 - bokeh 
 
 ## Usage
+
+The application is available online in [this website](http://3dpd.eu-west-3.elasticbeanstalk.com/3dpd).
+The file input is a csv file with 4 columns, no header, the first three columns are the xyz coordinates
+and the last coordinate is the radius of each point for the alpha shape filtration. It can be a 
+zero column. See the file ```sample.csv``` for an example.  
+
+### Download instructions
+
 Download the script files and save them in a folder called 3dPD. In the directory 
 above this folder, run the following command
 ```bash 
